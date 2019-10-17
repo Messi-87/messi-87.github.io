@@ -123,7 +123,7 @@ var Game = (function() {
         var data = this.save();
 
         var string = JSON.stringify(data);
-        var compressed = LZString.compressToBase64(string);
+        var compressed = string;
 
         console.log('Compressing Save');
         console.log('Compressed from ' + string.length + ' to ' + compressed.length + ' characters');
